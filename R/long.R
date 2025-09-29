@@ -7,15 +7,14 @@
 #'long(maternal_mortality)
 #'@export
 
-library(dplyr)
 long = function(data){
   temp_name=deparse(substitute(data))
-  temp <- data %>% pivot_longer(
+  temp <- data |> tidyr::pivot_longer(
     cols=starts_with("X"),
     names_to = "year",
     values_to = temp_name,
     names_prefix="X"
-  ) %>% select(c("iso","year",temp_name))
+  ) |> dplyr::select(c("iso","year",temp_name))
   return(temp)
 }
 
