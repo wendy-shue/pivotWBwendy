@@ -1,13 +1,14 @@
 #'@title wide data to long data
 #'@description Pivoting data format from wide to long.
 #'@param data A data frame in wide format
-#'@return A long data frame
+#'@return A long data frame.
 #'@author Wendy Shue
 #'@examples
 #'long(maternal_mortality)
 #'@export
 
-long = function(data){
+#library(tidyr)
+long <- function(data){
   temp_name=deparse(substitute(data))
   temp <- data |> tidyr::pivot_longer(
     cols=starts_with("X"),

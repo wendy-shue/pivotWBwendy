@@ -10,7 +10,7 @@ long(data)
 \item{data}{A data frame in wide format}
 }
 \value{
-A long data frame
+A long data frame.
 }
 \description{
 Pivoting data format from wide to long.

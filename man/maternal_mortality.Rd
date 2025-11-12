@@ -10,7 +10,6 @@ A data frame with 1028 rows and 4 variables:
 \item{iso}{country codes}
 \item{country}{countries}
 \item{X2000-X2019}{maternal mortality ratio from 2000-2019,respectively}
-\item{FetalMal}{Indicator for fetal malformation}
 }
 }
 \source{

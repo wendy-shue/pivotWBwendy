@@ -8,7 +8,6 @@
 #' \item{iso}{country codes}
 #' \item{country}{countries}
 #' \item{X2000-X2019}{maternal mortality ratio from 2000-2019,respectively}
-#' \item{FetalMal}{Indicator for fetal malformation}
 #' }
 #' @source https://data.worldbank.org/indicator/SH.STA.MMRT
 "maternal_mortality"
