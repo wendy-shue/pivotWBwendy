@@ -7,7 +7,6 @@
 #'long(maternal_mortality)
 #'@export
 
-#library(tidyr)
 long <- function(data){
   temp_name=deparse(substitute(data))
   temp <- data |> tidyr::pivot_longer(
